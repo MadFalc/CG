@@ -51,21 +51,37 @@
         onderdeel is van een specifieke class.</p>
     <br>
     <h2>Opdracht: 1.3 - Constructor</h2>
-    <p>Leg uit waar een Constructor voor gebruikt wordt en wat het voordeel is?<br> </p>
-    <p>Hoe ziet de basic syntax van de Constructor eruit?</p>
+    <p>Leg uit waar een Constructor voor gebruikt wordt en wat het voordeel is?<br> Vergelijkbaar met dat een functie
+        een parameter (of meer) heeft die je invult wanneer je de functie oproept, heb je bij een class met de construct
+        dat je twee 'parameters' die de properties aanpast. In deze voorbeelden wordt construct gebruikt om met een
+        functie direct twee parameters ($name en $color) toe te wijzen aan met name en color. Ik vergeet het aller
+        belangrijkste bijna: wanneer een object wordt aangemaakt van de class, dan wordt een functie met construct
+        direct aangeroepen. Dit kan dus waarschijnlijk ook op andere manier gebruikt worden dan alleen het toewijzen van
+        parameters.</p>
+    <p>Hoe ziet de basic syntax van de Constructor eruit?<br> function __construct(parameter1, parameter 2, enz){dingen
+        die
+        gebeuren in de functie}.</p>
     <br>
-    <h2>Opdracht: 1.4 - Acces Modifiers</h2>
-    <p>Welke drie Access Modifier bestaan er?</p>
-    <p>Wat zijn hun verschillende rollen?</p>
-    <p>Op welke twee onderdelen van een Class kan je Access Modifiers gebruiken?</p>
-    <p>Wat denk je dat het nut is van Access Modifiers in een “echte” applicatie?</p>
+    <h2>Opdracht: 1.4 - Access Modifiers</h2>
+    <p>Welke drie Access Modifier bestaan er?<br> Public, protected en private.</p>
+    <p>Wat zijn hun verschillende rollen?<br> Ze zorgen ervoor dat onderdelen in sommige lagen wel toegankelijk zijn en
+        anderen niet.</p>
+    <p>Op welke twee onderdelen van een Class kan je Access Modifiers gebruiken?<br> properties en methods.</p>
+    <p>Wat denk je dat het nut is van Access Modifiers in een “echte” applicatie?<br> Meer controle over (en juist
+        gebruiken van) variabelen.</p>
     <br>
     <h2>Opdracht: 1.5 - Inheritance</h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>Wat is Inheritance?<br> When a class derives from another class.</p>
+    <p>Wat is het verschil tussen een Child Class en een Parent Class?<br> De child heeft alles geërfd van de parent,
+        maar vervolgens kun je de child aanpassen. Vervolgens zijn ze niet hetzelfde meer.</p>
+    <p>Welke keyword wordt gebruikt om aan te geven dat er Inheritance plaatsvindt? Wat is de basis Syntax van
+        Inheritance in zijn geheel?<br> extends. class naamChildClass extends naamParentClass {dingen die nieuw zijn in
+        de Child}</p>
+    <p>Hoe kan je Inherited Methods Overridden? Wat is het nu hiervan denk je?<br> In het voorbeeld op w3 wordt een
+        volledig nieuwe class geschreven, in principe. Maar het voorbeeld laat zien dat het letterlijk OVER de andere
+        dingen heenschrijft. Zo voegt het de propertie weight toe, maar verandert het ook de intro functie.</p>
+    <p>Waar wordt de Final keyword voor gebruikt?<br> Wanneer een property of method final toegewezen krijgt, dan kan
+        deze onmogelijk ge-enherit worden. In de voorbeelden op w3 resulteert dit in een error.</p>
     <br>
     <h2>Opdracht: 1.6 - Class Constants</h2>
     <p></p>
@@ -89,5 +105,5 @@
 </body>
 
 <?php
-echo "Hey :)";
+echo "PHP voor jou en mij.";
 ?>
