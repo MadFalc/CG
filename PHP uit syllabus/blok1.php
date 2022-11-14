@@ -1,3 +1,9 @@
+<head>
+    <title>Blok 1!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/heart icon.gif" type="image/gif"> <!--Kijk Tomi, als je hem opent in Firefox, dan pulseert het hartje!-->
+</head>
+
 <?php
 
 $kangaroo = "Kanga";
@@ -134,8 +140,10 @@ echo "<br>--------Opdracht 3!--------<br>";
 function checkLowerCase($str)
 {
     for ($i = 0; $i < strlen($str); $i++) {
-        if (ord($str[$i]) >= ord('A') &&
-            ord($str[$i]) <= ord('Z')) {
+        if (
+            ord($str[$i]) >= ord('A') &&
+            ord($str[$i]) <= ord('Z')
+        ) {
             return false;
         }
     }
@@ -267,34 +275,34 @@ foreach ($weeklyTemps as $x => $x_value) {
 echo "<br>--------Opdracht Fibonnaci!--------<br>";
 
 /*
- $zeroToninenine = array();
- for ($i = 0; $i <= 99; $i++) {
- $zeroToninenine[] = $i;
- }
- function Fibonacci($number)
- {
- // if and else if to generate first two numbers
- if ($number == 0)
- return 0;
- else if ($number == 1)
- return 1;
- // Recursive Call to get the upcoming numbers
- else
- return (Fibonacci($number - 1) +
- Fibonacci($number - 2));
- }
- foreach ($zeroToninenine as $x => $x_value) {
- if ($x_value == 0) {
- echo "0 ";
- } elseif ($x_value == 1) {
- echo "1 ";
- } elseif ($x_value == Fibonacci($x_calue)) {
- echo "fib";
- } else {
- echo $x_value . " ";
- }
- }
- */
+$zeroToninenine = array();
+for ($i = 0; $i <= 99; $i++) {
+$zeroToninenine[] = $i;
+}
+function Fibonacci($number)
+{
+// if and else if to generate first two numbers
+if ($number == 0)
+return 0;
+else if ($number == 1)
+return 1;
+// Recursive Call to get the upcoming numbers
+else
+return (Fibonacci($number - 1) +
+Fibonacci($number - 2));
+}
+foreach ($zeroToninenine as $x => $x_value) {
+if ($x_value == 0) {
+echo "0 ";
+} elseif ($x_value == 1) {
+echo "1 ";
+} elseif ($x_value == Fibonacci($x_calue)) {
+echo "fib";
+} else {
+echo $x_value . " ";
+}
+}
+*/
 ?>
 
 <!DOCTYPE html>
