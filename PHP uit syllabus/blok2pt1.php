@@ -84,26 +84,37 @@
         deze onmogelijk ge-enherit worden. In de voorbeelden op w3 resulteert dit in een error.</p>
     <br>
     <h2>Opdracht: 1.6 - Class Constants</h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>Wat is het nut van een Class Constant?<br> Als ik de beperkte informatie hierover op w3 begrijp, is het niet
+        anders dan andere constants. Het komt eropneer dat de constant aangemaakt wordt en vervolgens nooit meer
+        veranderd wordt. Ik weet niet of dit overdraagd naar een child, maar het nut is dat als iets altijd hetzelfde
+        werkt of is, dat dit ook niet veranderd kan worden en dus beperk je hiermee de mogelijkheid tot fouten.</p>
+    <p>Hoe declareer je een Class Constant?<br> 'const' vóór je 'variabele' of property. Dit is dan geen variabele meer,
+        maar een constante.</p>
+    <p>Hoe verschilt een Class Constant van een Class Property?<br> Dat deze niet meer veranderd kan worden. Een normale
+        Property kan nog wel veranderd worden.</p>
+    <p>Hoe access je een Class Constant van buiten de Class?<br> In het eerste voorbeeld op w3 wordt duidelijk buiten de
+        class classnaam::constantnaam gebruikt om de constant in de class aan te roepen.</p>
+    <p>Hoe access je een Class Constant van binnen de Class?<br> In het tweede voorbeeld wordt ook :: gebruikt, maar dan
+        met self ervoor ipv classnaam. In weze gebeurt in beide gevallen hetzelfde.</p>
     <br>
     <h2>Opdracht: 1.7 - Static Methods</h2>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>Wat is het verschil tussen een Static Method en een reguliere Class Method?<br> Normaliter moet er eerst een
+        instance/object aangemaakt worden van een class voor de inhoud gebruikt kan worden. Wanneer een onderdeel van
+        een class static is, dan kan deze direct gebruikt/aangeroepen worden zonder eerst een instance of object te
+        maken van de class. Ook kan een static method gebruikt worden in een andere method, maar ook binnen dezelfde
+        class met self::className.</p>
+    <p>Hoe ziet de Syntax van een Static Method eruit?<br> Je zet 'static' voor 'function', vervolgens roep je hem aan
+        met Classname::staticMethod();</p>
+    <p>Hoe gebruik je de Static Method? <br> Met Classname::staticMethod();</p>
     <br>
     <h2>Opdracht: 1.8 - Static Properties</h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+    <p>Wat is het verschil tussen een Static Property en een reguliere Property?<br> Hier geldt eigenlijk hetzelfde als
+        voor de classes. Gebruik static zodat properties op andere plekken gebruikt kunnen worden.</p>
+    <p>Hoe declareer je een Static Property?<br> Ook op dezelfde manier. Door static voor de declared naam van de
+        property te zetten.</p>
+    <p>Hoe gebruik je een Static Property <b>binnen</b> een Class?<br> className::$propertyName; , maar in dit geval kun
+        je ook 'this' doen ipv 'className'.</p>
+    <p>Hoe gebruik je een Static Property <b>buiten</b> een Class?<br> className::$propertyName;</p>
     <br>
 
 </body>
-
-<?php
-echo "PHP voor jou en mij.";
-?>

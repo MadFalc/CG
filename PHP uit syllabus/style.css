@@ -1,0 +1,46 @@
+/*===========
+ basic reset
+===========*/
+body {
+    margin: 0;
+    padding: 0;
+    color: blue;
+  }
+
+/*===========
+ grids, menu en top
+===========*/
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.top {
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: red;
+}
+
+.menu {
+    grid-column: 1;
+    grid-row: 2/5;
+    background-color: green;
+}
+
+.main {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    background-color: blue;
+}
+
+
+
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+}
