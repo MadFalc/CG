@@ -12,7 +12,10 @@
 </head>
 
 <body>
-        <div class="top" style="margin-top:30px;">
+        <div class="mark">
+                <h1>YES</h1>
+        </div>
+        <div class="top" id=top style="margin-top:30px;">
                 wajo dit is top.
         </div>
         <ul class="menu" id=menu>
