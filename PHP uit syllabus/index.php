@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="top" style="margin-top:30px;">
+    <div class="top" id=top>
         wajo dit is top.
     </div>
     <ul class="menu" id=menu>
@@ -24,20 +24,20 @@
 
     <div class="main">
         Moet je dit lezen.
-        <?php 
-        
+        <?php
+
         $variabele = "Lennart";
-        
+
         echo "<div style='color: red;'> $variabele </div>"
-        
-        ?>
+
+            ?>
         jo<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>
         jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo
         <br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>
     </div>
-    
+
 </body>
 
 </html>

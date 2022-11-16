@@ -1,10 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blok 1!</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/heart icon.gif" type="image/gif">
     <!--Kijk Tomi, als je hem opent in Firefox, dan pulseert het hartje!-->
 </head>
 
-<?php
+<body>
+    <div class="top" style="margin-top:30px;">
+        wajo dit is top.
+    </div>
+    <ul class="menu" id=menu>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="blok1.php">Blok 1</a></li>
+        <li><a href="blok2pt1.php">Blok 2 (1/2)</a></li>
+        <li><a href="blok2pt2.php">Blok 2 (2/2)</a></li>
+    </ul>
+
+    <div class="main">
+        <h1>BLOK 1</h1>
+
+        <?php
 
 $kangaroo = "Kanga";
 $$kangaroo = "Roo";
@@ -63,15 +84,15 @@ echo "<br>--------Opdracht 5!--------<br>";
 ?>
 
 
-<!DOCTYPE html>
-<html>
+        <!DOCTYPE html>
+        <html>
 
-<head></head>
+        <head></head>
 
-<body>
-    <table width="270px" cellspacing="0px" cellpadding="0px" border="15px">
-        <!-- cell 270px wide (8 columns x 30px) -->
-        <?php
+        <body>
+            <table width="270px" cellspacing="0px" cellpadding="0px" border="15px">
+                <!-- cell 270px wide (8 columns x 30px) -->
+                <?php
         for ($row = 1; $row <= 8; $row++) {
             echo "<tr>";
             for ($col = 1; $col <= 8; $col++) {
@@ -85,12 +106,12 @@ echo "<br>--------Opdracht 5!--------<br>";
         }
 
         ?>
-    </table>
-</body>
+            </table>
+        </body>
 
-</html>
+        </html>
 
-<?php
+        <?php
 echo "<br>FUNCTION EXERCISES<br>";
 
 echo "<br>--------Opdracht 1!--------<br>";
@@ -179,15 +200,15 @@ echo "<br>--------Opdracht 5!--------<br>";
 
 
 
-<form method="post" action="">
-    <label for="post">Name: </label>
-    <input type="text" name="value1">
-    <label for="post">Age: </label>
-    <input type="text" name="value2">
-    <input type="submit"><br>
-</form>
+        <form method="post" action="">
+            <label for="post">Name: </label>
+            <input type="text" name="value1">
+            <label for="post">Age: </label>
+            <input type="text" name="value2">
+            <input type="submit"><br>
+        </form>
 
-<?php
+        <?php
 function ageToVote()
 {
     if (isset($_POST['value1']) and isset($_POST['value2'])) {
@@ -305,22 +326,10 @@ echo $x_value . " ";
 */
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+        <h1>Problem solving for developpers</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oefeningen PHP</title>
-</head>
-
-<body>
-
-    <h1>Problem solving for developpers</h1>
-
-    <h3>Problem 1 <h3>
-            <?php
+        <h3>Problem 1 <h3>
+                <?php
             function fibonacci($n)
             {
 
@@ -431,5 +440,9 @@ echo $x_value . " ";
 
     }
 </style>
+
+</div>
+
+</body>
 
 </html>
