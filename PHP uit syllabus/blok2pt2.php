@@ -28,19 +28,73 @@
     <div class="main">
         <h1>BLOK 2 - Niveau 2</h1>
         <h2>Opdracht 1</h2>
-        Moet je dit lezen.
         <?php
 
-        $variabele = "Lennart";
+        class MyClass
+        {
+            function __construct()
+            {
+                echo "MyClass class has been initialized!";
+            }
+        }
+        $opdracht = new MyClass();
+        ?>
 
-        echo "<div style='color: red;'> $variabele </div>"
+        <br>
+        <h2>Opdracht 2</h2>
+        <?php
+        class SimpleClass
+        {
+            var $name;
+            function __construct()
+            {
+                $this->name = "Scott";
+                echo "Hello All, I am $this->name";
+            }
+        }
+        $opdracht2 = new SimpleClass();
+        ?>
 
-            ?>
-        jo<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>
-        jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo
-        <br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>
+        <br>
+        <h2>Opdracht 3</h2>
+        <?php
+        class MyCalculator
+        {
+            public $num1;
+            public $num2;
+            function __construct($num1, $num2)
+            {
+                $this->num1 = $num1;
+                $this->num2 = $num2;
+            }
+            function multiply()
+            {
+                return $this->num1 * $this->num2;
+            }
+            function divide()
+            {
+                return $this->num1 / $this->num2;
+            }
+            function add()
+            {
+                return $this->num1 + $this->num2;
+            }
+            function substract()
+            {
+                return $this->num1 - $this->num2;
+            }
+        }
+        $opdracht3 = new MyCalculator(6, 3);
+        echo $opdracht3->multiply();
+        echo "<br>";
+        echo $opdracht3->divide();
+        echo "<br>";
+        echo $opdracht3->add();
+        echo "<br>";
+        echo $opdracht3->substract();
+
+        ?>
+        <br>
     </div>
 
 </body>
