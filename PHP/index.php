@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <div class="mark">
-        <h1>YES</h1>
-    </div>
     <div class="top" id=top style="margin-top:30px;">
         wajo dit is top.
+    </div>
+    <div class="mark" id=mark>
+        <a href="https://codegorilla.nl/"><img src="img/CG.png" alt="CG logo" style="height:100px;"></a>
     </div>
     <ul class="menu" id=menu>
         <li><a href="index.php">Home</a></li>
@@ -34,11 +34,10 @@
         echo "<div style='color: red;'> $variabele </div>"
 
             ?>
-        jo<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>
-        jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo
-        <br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>jo<br>
+    </div>
+    <div class="socials" id=socials>
+        <a href="https://www.linkedin.com/in/lennart-claus/"><img src="img/LinkedIn.png" alt="LinkedIn"
+                style="height:40px;"></a>
     </div>
 
 </body>
