@@ -16,14 +16,16 @@
     $tomi->addMeal("APPETIZER");
     $tomi->addMeal("MAIN COURSE");
     $tomi->addMeal("MAIN COURSE");
-    $tomi->addMeal("MAIN COURSE");
-    $tomi->addMeal("MAIN COURSE");
 
     //CREATE A SECOND CUSTOMER
     $bato = new Customer("Bato");
 
     // CUSTOMER ATE A BUNCH OF DESSERTS.
     $bato->addMeal("APPETIZER");
+    $bato->addMeal("MAIN COURSE");
+    $bato->addMeal("MAIN COURSE");
+    $bato->addMeal("MAIN COURSE");
+    $bato->addMeal("MAIN COURSE");    
     $bato->addMeal("MAIN COURSE");
     $bato->addMeal("MAIN COURSE");
 
