@@ -43,8 +43,8 @@
             <p class="text paragraph">
                 <?php
                 // ALL THE CLASSES WITH THEIR BEHAVIOR GO IN HERE.
-                require 'models/Taxi.php';
-                require 'models/Boekhouden.php';
+                require 'models/Ritjes.php';
+//                require 'models/Boekhouden.php';
                 // YOUR APP IS RUN FROM A MAIN FILE.
                 require 'controllers/app.php'
                     ?>

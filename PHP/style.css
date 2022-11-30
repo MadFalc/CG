@@ -27,7 +27,8 @@ body {
 .main {
     grid-column: 2/3;
     grid-row: 2/5;
-    padding: 2.8em;
+    padding: 1em;
+    padding-right: 10em;
 }
 
 .mark {

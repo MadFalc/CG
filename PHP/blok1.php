@@ -221,7 +221,7 @@
             }
 
             if ($_POST['value2'] <= '17') {
-                echo $_POST['value1'] . " is too young to vote (" . $_POST['value2'] . "). Git outaa heere. <br> De stemgrens is 18 jaar. Wordt snel ouder om te stemmen. <br>";
+                echo $_POST['value1'] . " is too young to vote (" . $_POST['value2'] . "). Git outaa heere. <br> De stemgrens is 18 jaar. Word snel ouder om te stemmen. <br>";
                 return;
             } else {
                 echo $_POST['value1'] . " can vote. They are old enough (" . $_POST['value2'] . "). Let's go. <br>";
