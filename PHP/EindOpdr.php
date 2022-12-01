@@ -42,12 +42,9 @@
             <p class="text heading">App Output Here:</p>
             <p class="text paragraph">
                 <?php
-                // ALL THE CLASSES WITH THEIR BEHAVIOR GO IN HERE.
-                require 'models/Ritjes.php';
-//                require 'models/Boekhouden.php';
                 // YOUR APP IS RUN FROM A MAIN FILE.
-                require 'controllers/app.php'
-                    ?>
+                require 'controllers/app.php';
+                ?>
             </p>
         </div>
     </div>

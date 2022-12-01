@@ -21,8 +21,9 @@
     <ul class="menu" id=menu>
         <li><a href="index.php">Home</a></li>
         <li><a href="blok1.php">Blok 1</a></li>
-        <li><a href="blok2pt1.php">Blok 2 (1/2)</a></li>
-        <li><a href="blok2pt2.php">Blok 2 (2/2)</a></li>
+        <li><a href="blok2pt1.php">Blok 2 (1/3)</a></li>
+        <li><a href="blok2pt2.php">Blok 2 (2/3)</a></li>
+        <li><a href="blok2EindOpdr.php">Blok 2 (3/3)</a></li>
     </ul>
 
     <div class="main">
@@ -201,8 +202,6 @@
         echo "<br>--------Opdracht 5!--------<br>";
         ?>
 
-
-
         <form method="post" action="">
             <label for="post">Name: </label>
             <input type="text" name="value1">
@@ -217,10 +216,11 @@
             if (isset($_POST['value1']) and isset($_POST['value2'])) {
                 echo "You provided name: " . $_POST['value1'] . "<br>";
                 echo "You provided age: " . $_POST['value2'] . "<br>";
-            } else {
+            } else {echo "Provide a name and age!<br>";
             }
-
-            if ($_POST['value2'] <= '17') {
+            if ($_POST['value1'] == null){
+                " ";
+            }elseif ($_POST['value2'] <= '17'){
                 echo $_POST['value1'] . " is too young to vote (" . $_POST['value2'] . "). Git outaa heere. <br> De stemgrens is 18 jaar. Word snel ouder om te stemmen. <br>";
                 return;
             } else {

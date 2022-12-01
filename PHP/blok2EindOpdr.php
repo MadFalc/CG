@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page!</title>
+    <title>Blok 2 eindopdracht!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/heart icon.gif" type="image/gif">
     <!--Kijk Tomi, als je hem opent in Firefox, dan pulseert het hartje!-->
@@ -27,14 +27,9 @@
     </ul>
 
     <div class="main">
-        Moet je dit lezen.
         <?php
-
-        $variabele = "Lennart";
-
-        echo "<div style='color: red;'> $variabele </div>"
-
-            ?>
+        require 'EindOpdr.php';
+        ?>
     </div>
     <div class="socials" id=socials>
         <a href="https://www.linkedin.com/in/lennart-claus/"><img src="img/LinkedIn.png" alt="LinkedIn"

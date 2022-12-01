@@ -1,4 +1,6 @@
 <?php
+// ALL THE CLASSES WITH THEIR BEHAVIOR GO IN HERE.
+require 'models/Ritjes.php';
 
 // Object voor alle ritjes aanmaken aanmaken:
 $Boekhouden = new Ritjes();
@@ -17,7 +19,7 @@ $Boekhouden->addRitje(117, 69, "2022-11-28 12:34", "2022-11-28 14:44");
 
 echo "Er zijn in totaal " . count($Boekhouden->ritjesTaxiNummer) . " ritten geweest.";
 echo "<br>Opbrengsten per rit:";
-$Boekhouden->totalRevenueRitjes();  //Deze methode werkt samen met andere methodes om alle verdiensten uit te printen.
+$Boekhouden->totalRevenueRitjes(); //Deze methode werkt samen met andere methodes om alle verdiensten uit te printen.
 echo "<br>Gemiddelde afstand alle ritten: " . $Boekhouden->avgDistance();
 echo "<br>Grootste afstand van enkel ritten: " . $Boekhouden->highestDistance();
 ?>

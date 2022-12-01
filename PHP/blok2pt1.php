@@ -21,8 +21,9 @@
         <ul class="menu" id=menu>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="blok1.php">Blok 1</a></li>
-                <li><a href="blok2pt1.php">Blok 2 (1/2)</a></li>
-                <li><a href="blok2pt2.php">Blok 2 (2/2)</a></li>
+                <li><a href="blok2pt1.php">Blok 2 (1/3)</a></li>
+                <li><a href="blok2pt2.php">Blok 2 (2/3)</a></li>
+                <li><a href="blok2EindOpdr.php">Blok 2 (3/3)</a></li>
         </ul>
 
         <div class="main">
