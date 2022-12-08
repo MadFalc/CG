@@ -13,7 +13,7 @@
 
 <body>
         <div class="top" id=top style="margin-top:30px;">
-                wajo dit is top.
+                BLOK 2 - Niveau 1
         </div>
         <div class="mark" id=mark>
                 <a href="https://codegorilla.nl/"><img src="img/CG.png" alt="CG logo" style="height:100px;"></a>
@@ -27,7 +27,6 @@
         </ul>
 
         <div class="main">
-                <h1>BLOK 2 - Niveau 1</h1>
                 <h2>Opdracht: 1.1 - WHAT IS OOP?</h2>
                 <p><span style="font-weight: bold">Leg in je eigen woorden uit wat het verschil is tussen flat PHP en
                                 Object

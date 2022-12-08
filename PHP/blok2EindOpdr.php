@@ -13,7 +13,7 @@
 
 <body>
     <div class="top" id=top style="margin-top:30px;">
-        wajo dit is top.
+        BLOK 2 - Eindopdracht
     </div>
     <div class="mark" id=mark>
         <a href="https://codegorilla.nl/"><img src="img/CG.png" alt="CG logo" style="height:100px;"></a>

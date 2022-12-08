@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <div class="top" id=top style="margin-top:30px;">
-        wajo dit is top.
+    <div class="top" id=top style="margin-top:30px; padding-top: 25.8px; padding-bottom: 0px">
+        <img src="img/HOME.png" alt="topper" style="height:100px;">
     </div>
     <div class="mark" id=mark>
         <a href="https://codegorilla.nl/"><img src="img/CG.png" alt="CG logo" style="height:100px;"></a>

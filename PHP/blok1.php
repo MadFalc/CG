@@ -13,7 +13,7 @@
 
 <body>
     <div class="top" id=top style="margin-top:30px;">
-        wajo dit is top.
+        BLOK 1
     </div>
     <div class="mark" id=mark>
         <a href="https://codegorilla.nl/"><img src="img/CG.png" alt="CG logo" style="height:100px;"></a>
@@ -27,8 +27,6 @@
     </ul>
 
     <div class="main">
-        <h1>BLOK 1</h1>
-
         <?php
 
         $kangaroo = "Kanga";
@@ -216,11 +214,12 @@
             if (isset($_POST['value1']) and isset($_POST['value2'])) {
                 echo "You provided name: " . $_POST['value1'] . "<br>";
                 echo "You provided age: " . $_POST['value2'] . "<br>";
-            } else {echo "Provide a name and age!<br>";
+            } else {
+                echo "Provide a name and age!<br>";
             }
-            if ($_POST['value1'] == null){
+            if ($_POST['value1'] == null) {
                 " ";
-            }elseif ($_POST['value2'] <= '17'){
+            } elseif ($_POST['value2'] <= '17') {
                 echo $_POST['value1'] . " is too young to vote (" . $_POST['value2'] . "). Git outaa heere. <br> De stemgrens is 18 jaar. Word snel ouder om te stemmen. <br>";
                 return;
             } else {
