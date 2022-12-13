@@ -6,38 +6,49 @@
 </head>
 
 <body>
-    <form>
+    <form method="post">
         <div>
             <label for="picture">
                 Wil je zelf wat katjes en tafelpoten genereren? Of heb je liever appels ipv katten? Ziehier(vul niet te
                 hoge getallen in!):
             </label>
             <br>
+            <?php
+            $pictures = [
+                'cat.png' => 'Cat',
+                'apple.jpg' => 'Apple',
+                'doggy.jpg' => 'Doggy'
+            ];
+            ?>
             <select name="picture" id="picture">
-                <option value="cat.png" <?php if (isset($_GET['picture']) && $_GET['picture'] === 'cat.jpg') { ?> selected
+                <?php foreach ($pictures as $filename => $description) {
+                ?>
+                <option value="<?php
+                    echo htmlspecialchars($filename, ENT_QUOTES);
+                ?>" <?php                    if (isset($_POST['picture']) && $_POST['picture'] === $filename) { ?> selected
+                    ?>
                     <?php
-                } ?>>Cat
+                    }
+                ?>>
+                    <?php echo htmlspecialchars($description, ENT_QUOTES); ?>
                 </option>
-                <option value="apple.jpg" <?php if (isset($_GET['picture']) && $_GET['picture']==='apple.jpg') { ?>
-                    selected
-                    <?php
-                } ?>>Apple
-                </option>
+                <?php
+                } ?>
             </select>
             <label for="number">
                 Number of pictures to show:
             </label>
             <input name="number" value="<?php
-            if (isset($_GET['number'])) {
-                echo htmlspecialchars($_GET['number'], ENT_QUOTES);
+            if (isset($_POST['number'])) {
+                print htmlspecialchars($_POST['number'], ENT_QUOTES);
             }
             ?>">
             <label for="tafelpoten">
                 Number of tablelegs to show:
             </label>
             <input name="tafelpoten" value="<?php
-            if (isset($_GET['tafelpoten'])) {
-                echo htmlspecialchars($_GET['tafelpoten'], ENT_QUOTES);
+            if (isset($_POST['tafelpoten'])) {
+                print htmlspecialchars($_POST['tafelpoten'], ENT_QUOTES);
             }
             ?>">
             <br>
@@ -47,8 +58,8 @@
     <br>
     <?php
 
-    $numberOfKittens = isset($_GET['number']) ? (int) $_GET['number'] : 1;
-    $testnummer = isset($_GET['tafelpoten']) ? (int) $_GET['tafelpoten'] : 1;
+    $numberOfKittens = isset($_POST['number']) ? (int) $_POST['number'] : 1;
+    $testnummer = isset($_POST['tafelpoten']) ? (int) $_POST['tafelpoten'] : 1;
     if ($numberOfKittens < 1 || $testnummer < 1) {
         $numberOfKittens = 0;
         $testnummer = 0;
@@ -57,7 +68,7 @@
     <?php
     }
 
-    $picture = isset($_GET['picture']) ? $_GET['picture'] : 'cat.png';
+    $picture = isset($_POST['picture']) ? $_POST['picture'] : 'cat.png';
 
     if ($numberOfKittens > 1000 || $testnummer > 1000) {
     ?>Wat zei ik nou? Niet te hoog!
