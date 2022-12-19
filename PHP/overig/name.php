@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
+include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
+?>
+<div class="top" id=top style="margin-top:30px;">
+    Name and language
+</div>
+<?php
+include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
+?>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The cookie that became a session</title>
+    <title>Name</title>
 </head>
-
 <?php
-session_start();
 
+// Hieronder worden name, language en message geset. Message gebeurt in dit geval alleen wanneer name bestaat.
 if (isset($_POST['name'])) {
     $_SESSION['name'] = $_POST['name'];
     $_SESSION['language'] = $_GET['language'];
@@ -95,6 +99,7 @@ $messages = [
             <button type="submit">Continue</button>
         </p>
     </form>
-</body>
-
-</html>
+    <p><a href="logout.php">Log out</a></p>
+    <?php
+    include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+    ?>

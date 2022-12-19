@@ -1,5 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
+include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
+?>
+<div class="top" id=top style="margin-top:30px;">
+    Pictures
+</div>
+<?php
+include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
+?>
 
 <head>
     <title>Kittens. Or not.</title>
@@ -25,11 +33,11 @@
                 ?>
                 <option value="<?php
                     echo htmlspecialchars($filename, ENT_QUOTES);
-                ?>" <?php                    if (isset($_POST['picture']) && $_POST['picture'] === $filename) { ?> selected
+                ?>" <?php if (isset($_POST['picture']) && $_POST['picture'] === $filename) { ?> selected
                     ?>
                     <?php
                     }
-                ?>>
+                    ?>>
                     <?php echo htmlspecialchars($description, ENT_QUOTES); ?>
                 </option>
                 <?php
@@ -93,6 +101,8 @@
         }
     }
     ?>
-</body>
+    <p><a href="logout.php">Log out</a></p>
 
-</html>
+    <?php
+    include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+    ?>

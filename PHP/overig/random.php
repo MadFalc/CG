@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
+include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
+?>
+<div class="top" id=top style="margin-top:30px;">
+  Roll the dice!
+</div>
+<?php
+
+include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
+
+
+
+?>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your roll to hit</title>
+  <title>Dnd 3.5 sim?</title>
 </head>
 
 <!-- Hier worden twee random getalletjes gemaakt (hitroll, plaatjes en tafelpoten) en de naam van de vorige pagina wordt ingekort als nodig. -->
 <?php
-session_start();
 
 $randomInt = random_int(1, 20);
 $pootjes = random_int(1, 10);
@@ -23,12 +31,13 @@ if (isset($_SESSION['name'])) {
 ?>
 
 <body>
-  <h1><button style="font-size:18px;width:70px;height:70px;margin:10px;" onClick="window.location.reload();">Reroll!</button>You rolled:
+  <h3><button style="font-size:18px;width:70px;height:70px;margin:10px;"
+      onClick="window.location.reload();">Reroll!</button>You rolled:
     <?php echo $randomInt; ?>
-  </h1>
-  <?php include __DIR__ . '/_flash_message.php'; ?>
+  </h3>
+
   <?php if ($randomInt > 19) { ?> <!-- Als het gaat om een critical hit -->
-  <h2>Nice<?php if (isset($_SESSION['name'])&&strlen($_SESSION['name'])>=2) {
+  <h3>Nice<?php if (isset($_SESSION['name']) && strlen($_SESSION['name']) >= 2) {
       echo ", " . $name;
     }
   ?>! Now roll for crit!
@@ -54,7 +63,7 @@ if (isset($_SESSION['name'])) {
           document.getElementById("critdmgcomment").innerHTML = "That's an immense amount of damage!";
         } else if (critdmg > 7) {
           document.getElementById("critdmgcomment").innerHTML = "Nice damage!";
-        } else if (critdmg > 5 ) {
+        } else if (critdmg > 5) {
           document.getElementById("critdmgcomment").innerHTML = "Good job.";
         } else {
           document.getElementById("critdmgcomment").innerHTML = "Poor damage for a crit :(";
@@ -71,12 +80,12 @@ if (isset($_SESSION['name'])) {
       }
     </script>
 
-  </h2>
-  <?php } elseif ($randomInt > 11) { ?> <!-- Als het gaat om een normale hit -->
-  <h2>Nice<?php if (isset($_SESSION['name'])&&strlen($_SESSION['name'])>=2) {
+  </h3>
+  <?php } elseif ($randomInt >= 11) { ?> <!-- Als het gaat om een normale hit -->
+  <h3>Nice<?php if (isset($_SESSION['name']) && strlen($_SESSION['name']) >= 2) {
       echo ", " . $name;
     }
-    ?>!
+  ?>!
     <button onclick="dmgroll()">Now roll for damage!</button>
     <div id="damage"></div>
     <div id="dmgcomment"></div>
@@ -91,7 +100,7 @@ if (isset($_SESSION['name'])) {
         }
       }
     </script>
-  </h2>
+  </h3>
   <?php } else { ?> <!-- als je mist -->
   You missed! You need to roll 11 or higher to hit.
   <?php } ?>
@@ -110,6 +119,7 @@ if (isset($_SESSION['name'])) {
   </form>
 
   </p>
-</body>
-
-</html>
+  <p><a href="logout.php">Log out</a></p>
+  <?php
+  include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+  ?>
