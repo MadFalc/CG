@@ -1,23 +1,13 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
-?>
-<div class="top" id=top style="margin-top:30px;">
-    The Elephpant!
-</div>
-<?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
-?>
-
-<head>
-    <title>Secret picture!</title>
-</head>
-<?php
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "The Elephpant!";
+$titletext = "Secret picture!";
+include(__DIR__ . '/../_header.php');
 
 // Hieronder worden name, language en message geset. Message gebeurt in dit geval alleen wanneer name bestaat.
 if (isset($_SESSION['authenticated_user'])) {
-        $_SESSION['message'] = '(Secret message because you logged in first! Hurrahh!!)';
-    }
+    $_SESSION['message'] = '(Secret message because you logged in first! Hurrahh!!)';
+}
 
 if (!isset($_SESSION['authenticated_user'])) {
     header('Location: login.php');
@@ -39,7 +29,7 @@ if (!isset($_SESSION['authenticated_user'])) {
     <p>Here's something special for you,
         <?php echo $_SESSION['authenticated_user']; ?>:
     </p>
-    <p><img src="elephpant.jpg" alt="An elephpant"></p>
+    <p><img src="img/elephpant.jpg" alt="An elephpant"></p>
 
     <form method="post" action="name.php">
         <input type="hidden">
@@ -47,7 +37,7 @@ if (!isset($_SESSION['authenticated_user'])) {
             Let's continue!
         </button>
     </form>
-    <p><a href="logout.php">Log out</a></p>
+
     <?php
-    include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+    include(__DIR__ . '/../_footer.php');
     ?>

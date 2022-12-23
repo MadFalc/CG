@@ -66,6 +66,8 @@ body {
     margin-top: -2em;
     padding-top: 50px;
     padding-bottom: 50px;
+    /* padding-bottom: 0px;
+    padding-top: 26px; Dit kan ipv hierboven als ik mooie word-art zou doen op alle pagina's*/ 
 }
 
 .menu {

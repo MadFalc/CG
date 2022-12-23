@@ -1,14 +1,8 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
-?>
-<div class="top" id=top style="margin-top:30px;">
-        BLOK 2 - Niveau 1
-</div>
-<head>
-    <title>Blok 2 (1/3)</title>
-</head>
-<?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "BLOK 2 - Niveau 1";
+$titletext = "Blok 2 (1/3)";
+include(__DIR__ . '/../_header.php');
 ?>
 <h2>Opdracht: 1.1 - WHAT IS OOP?</h2>
 <p><span style="font-weight: bold">Leg in je eigen woorden uit wat het verschil is tussen flat PHP en
@@ -226,5 +220,5 @@ include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
                 Class?</span><br><span style="font-size:18px"> className::$propertyName;</span></p>
 <br>
 <?php
-                include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
-                ?>
+include(__DIR__ . '/../_footer.php');
+?>

@@ -1,17 +1,9 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "Pictures";
+$titletext = "Kittens. Or not";
+include(__DIR__ . '/../_header.php');
 ?>
-<div class="top" id=top style="margin-top:30px;">
-    Pictures
-</div>
-<?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
-?>
-
-<head>
-    <title>Kittens. Or not.</title>
-</head>
 
 <body>
     <form method="post">
@@ -33,8 +25,7 @@ include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
                 ?>
                 <option value="<?php
                     echo htmlspecialchars($filename, ENT_QUOTES);
-                ?>" <?php if (isset($_POST['picture']) && $_POST['picture'] === $filename) { ?> selected
-                    ?>
+                ?>" <?php if (isset($_POST['picture']) && $_POST['picture'] === $filename) { ?> selected ?>
                     <?php
                     }
                     ?>>
@@ -87,7 +78,7 @@ include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
     ?>
     Picture
     <?php echo $i; ?>:
-    <img src="<?php echo htmlspecialchars($picture, ENT_QUOTES); ?>" alt="Picture <?php echo $i; ?>" height=125px>
+    <img src="img/<?php echo htmlspecialchars($picture, ENT_QUOTES); ?>" alt="Picture <?php echo $i; ?>" height=125px>
     <?php
         }
         echo "<br>";
@@ -96,13 +87,12 @@ include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
     ?>
     Cool
     <?php echo $i; ?>
-    <img src="tafelpoot.jpg" alt="table leg <?php echo $i; ?>" width=125px>
+    <img src="img/tafelpoot.jpg" alt="table leg <?php echo $i; ?>" width=125px>
     <?php
         }
     }
     ?>
-    <p><a href="logout.php">Log out</a></p>
 
     <?php
-    include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+    include(__DIR__ . '/../_footer.php');
     ?>

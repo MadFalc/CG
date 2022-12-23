@@ -1,21 +1,9 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "Roll the dice!";
+$titletext = "DND 3.5 sim?";
+include(__DIR__ . '/../_header.php');
 ?>
-<div class="top" id=top style="margin-top:30px;">
-  Roll the dice!
-</div>
-<?php
-
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
-
-
-
-?>
-
-<head>
-  <title>Dnd 3.5 sim?</title>
-</head>
 
 <!-- Hier worden twee random getalletjes gemaakt (hitroll, plaatjes en tafelpoten) en de naam van de vorige pagina wordt ingekort als nodig. -->
 <?php
@@ -119,7 +107,6 @@ if (isset($_SESSION['name'])) {
   </form>
 
   </p>
-  <p><a href="logout.php">Log out</a></p>
   <?php
-  include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+  include(__DIR__ . '/../_footer.php');
   ?>

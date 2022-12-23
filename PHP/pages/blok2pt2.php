@@ -1,14 +1,8 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
-?>
-<div class="top" id=top style="margin-top:30px;">
-    BLOK 2 - Niveau 2
-</div>
-<head>
-    <title>Block 2 (2/3)</title>
-</head>
-<?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "BLOK 2 - Niveau 2";
+$titletext = "Blok 2 (2/3)";
+include(__DIR__ . '/../_header.php');
 ?>
 <h2>Opdracht 1</h2>
 <?php
@@ -75,5 +69,5 @@ echo "<br>";
 echo $opdracht3->add();
 echo "<br>";
 echo $opdracht3->substract();
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+include(__DIR__ . '/../_footer.php');
 ?>

@@ -1,5 +1,5 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
+include(__DIR__ . '/../bootstrap.php');
 
 unset($_SESSION['authenticated_user']);
 

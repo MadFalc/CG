@@ -3,11 +3,13 @@ In mijn geval is message in name ge-set en vertoond in random.php, vervolgens (u
 
 <?php
 if (isset($_SESSION['message'])) {
-    ?>
-    <p><?php
-        echo htmlspecialchars($_SESSION['message'], ENT_QUOTES);
-    ?></p>
+?>
+<div class="alert alert-primary" role="alert">
     <?php
+    echo htmlspecialchars($_SESSION['message'], ENT_QUOTES);
+    ?>
+</div>
+<?php
 
     unset($_SESSION['message']);
 }

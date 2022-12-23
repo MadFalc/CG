@@ -1,18 +1,8 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
-?>
-<div class="top" id=top style="margin-top:30px;">
-    Name and language
-</div>
-<?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
-?>
-
-<head>
-    <title>Name</title>
-</head>
-<?php
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "Name and language";
+$titletext = "Name";
+include(__DIR__ . '/../_header.php');
 
 // Hieronder worden name, language en message geset. Message gebeurt in dit geval alleen wanneer name bestaat.
 if (isset($_POST['name'])) {
@@ -69,9 +59,8 @@ $messages = [
                 <?php
                 foreach ($availableLanguages as $key => $value) {
                 ?>
-                <option value="<?php echo htmlspecialchars($key, ENT_QUOTES); ?>" <?php if ($selectedLanguage===$key) {
-                    ?> selected
-                    <?php } ?>>
+                <option value="<?php echo htmlspecialchars($key, ENT_QUOTES); ?>" <?php if ($selectedLanguage === $key) {
+                    ?> selected <?php } ?>>
                     <?php echo htmlspecialchars($value, ENT_QUOTES); ?>
                 </option>
                 <?php
@@ -99,7 +88,6 @@ $messages = [
             <button type="submit">Continue</button>
         </p>
     </form>
-    <p><a href="logout.php">Log out</a></p>
     <?php
-    include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+    include(__DIR__ . '/../_footer.php');
     ?>

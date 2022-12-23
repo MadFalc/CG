@@ -1,18 +1,9 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\bootstrap.php');
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
-?>
-<div class="top" id=top style="margin-top:30px;">
-    Login
-</div>
-<?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
-?>
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "Login";
+$titletext = "Login";
+include(__DIR__ . '/../_header.php');
 
-<head>
-    <title>Login</title>
-</head>
-<?php
 $users = [
     'WaarBenIk?' => '$2y$10$wzf8.Xvi5mHByz58IQ6GK.vYWNEc7uzP9fyKWkZm7UQAkcK.zjg..'
 ];
@@ -57,5 +48,5 @@ if (isset($_POST['username'], $_POST['password'])) {
     </div>
 </form>
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+include(__DIR__ . '/../_footer.php');
 ?>

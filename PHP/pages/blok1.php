@@ -1,14 +1,8 @@
 <?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_header.php');
-?>
-<div class="top" id=top style="margin-top:30px;">
-    BLOK 1
-</div>
-<head>
-    <title>Blok 1</title>
-</head>
-<?php
-include('C:\xampp\htdocs\opdrachten\CG\PHP\_betweener.php');
+include(__DIR__ . '/../bootstrap.php');
+$toptext = "BLOK 1";
+$titletext = "Blok 1";
+include(__DIR__ . '/../_header.php');
 
 $kangaroo = "Kanga";
 $$kangaroo = "Roo";
@@ -127,7 +121,7 @@ checkPrime(9);
 checkPrime(347);
 
 
-echo "<br>--------Opdracht 2!--------<br>";
+echo "<br><br>--------Opdracht 2!--------<br>";
 function revString(string $str)
 {
     $length = strlen($str);
@@ -140,7 +134,7 @@ function revString(string $str)
 revString("Whaddup partypeople. omgedraaid is diaardegmo");
 
 
-echo "<br>--------Opdracht 3!--------<br>";
+echo "<br><br>--------Opdracht 3!--------<br>";
 function checkLowerCase($str)
 {
     for ($i = 0; $i < strlen($str); $i++) {
@@ -178,7 +172,7 @@ function sortMyArray($a)
 
 $a = array(22, 11, 'ZZ', 'hallo', 33, 'zz', 100, 'wut', 2, 'abc', 'ABC');
 print_r(sortMyArray($a));
-echo "<br>--------Opdracht 5!--------<br>";
+echo "<br><br>--------Opdracht 5!--------<br>";
 ?>
 
 <form method="post" action="">
@@ -192,22 +186,23 @@ echo "<br>--------Opdracht 5!--------<br>";
 <?php
 function ageToVote()
 {
-    if (isset($_POST['value1']) and isset($_POST['value2'])) {
+    if (isset($_POST['value1']) && isset($_POST['value2'])) {
         echo "You provided name: " . $_POST['value1'] . "<br>";
         echo "You provided age: " . $_POST['value2'] . "<br>";
     } else {
         echo "Provide a name and age!<br>";
     }
-    if ($_POST['value1'] == null) {
+    if (isset($_POST['value1'])&&($_POST['value1']) == 0) {
         " ";
-    } elseif ($_POST['value2'] <= '17') {
+    } elseif (isset($_POST['value2'])&&($_POST['value2']) <= '17') {
         echo $_POST['value1'] . " is too young to vote (" . $_POST['value2'] . "). Git outaa heere. <br> De stemgrens is 18 jaar. Word snel ouder om te stemmen. <br>";
         return;
-    } else {
+    } elseif (isset($_POST['value1'])) {
         echo $_POST['value1'] . " can vote. They are old enough (" . $_POST['value2'] . "). Let's go. <br>";
         return;
     }
 }
+;
 ageToVote();
 
 echo "<br>ARRAY EXERCISES<br>";
@@ -425,5 +420,5 @@ echo $x_value . " ";
         </style>
 
         <?php
-        include('C:\xampp\htdocs\opdrachten\CG\PHP\_footer.php');
+        include(__DIR__ . '/../_footer.php');
         ?>
