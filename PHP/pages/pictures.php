@@ -78,7 +78,7 @@ include(__DIR__ . '/../_header.php');
     ?>
     Picture
     <?php echo $i; ?>:
-    <img src="img/<?php echo htmlspecialchars($picture, ENT_QUOTES); ?>" alt="Picture <?php echo $i; ?>" height=125px>
+    <img src="/opdrachten/CG/PHP/pages/img/<?php echo htmlspecialchars($picture, ENT_QUOTES); ?>" alt="Picture <?php echo $i; ?>" height=125px>
     <?php
         }
         echo "<br>";
@@ -87,7 +87,7 @@ include(__DIR__ . '/../_header.php');
     ?>
     Cool
     <?php echo $i; ?>
-    <img src="img/tafelpoot.jpg" alt="table leg <?php echo $i; ?>" width=125px>
+    <img src="/opdrachten/CG/PHP/pages/img/tafelpoot.jpg" alt="table leg <?php echo $i; ?>" width=125px>
     <?php
         }
     }

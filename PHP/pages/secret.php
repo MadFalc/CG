@@ -10,7 +10,7 @@ if (isset($_SESSION['authenticated_user'])) {
 }
 
 if (!isset($_SESSION['authenticated_user'])) {
-    header('Location: login.php');
+    header('Location: login');
     exit;
 }
 ?>
@@ -29,9 +29,9 @@ if (!isset($_SESSION['authenticated_user'])) {
     <p>Here's something special for you,
         <?php echo $_SESSION['authenticated_user']; ?>:
     </p>
-    <p><img src="img/elephpant.jpg" alt="An elephpant"></p>
+    <p><img src="/opdrachten/CG/PHP/pages/img/elephpant.jpg" alt="An elephpant"></p>
 
-    <form method="post" action="name.php">
+    <form method="post" action="name">
         <input type="hidden">
         <button type="submit" style="margin:69px;font-size:20px;width:269px;height:40px;">
             Let's continue!

@@ -4,8 +4,11 @@ $toptext = "Login";
 $titletext = "Login";
 include(__DIR__ . '/../_header.php');
 
+// Hier maak ik een hash en laat ik hem zien van een wachtwoord.
+// echo password_hash('Winnaar', PASSWORD_DEFAULT);
 $users = [
-    'WaarBenIk?' => '$2y$10$wzf8.Xvi5mHByz58IQ6GK.vYWNEc7uzP9fyKWkZm7UQAkcK.zjg..'
+    'WaarBenIk?' => '$2y$10$wzf8.Xvi5mHByz58IQ6GK.vYWNEc7uzP9fyKWkZm7UQAkcK.zjg..',
+    'Matthijs' => '$2y$10$Ko2T3ct9HBqV0j7hAamjYOxbC9O7DHUiGesJ2h7mB1Ia7U4Bxsmqy'
 ];
 
 if (isset($_POST['username'], $_POST['password'])) {
@@ -22,7 +25,7 @@ if (isset($_POST['username'], $_POST['password'])) {
             $_SESSION['authenticated_user'] = $_POST['username'];
 
             // Redirect to secret.php
-            header('Location: secret.php');
+            header('Location: secret');
             exit;
         }
     }

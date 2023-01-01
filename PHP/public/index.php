@@ -10,6 +10,8 @@ $urlMap = [
     '/pictures' => 'pictures.php',
     '/random' => 'random.php',
     '/secret' => 'secret.php',
+    '/list-tours' => 'list-tours.php',
+    '/create-tour' => 'create-tour.php',
     '/' => 'homepage.php'
 ];
 

@@ -1,6 +1,6 @@
 <?php
 include(__DIR__ . '/../bootstrap.php');
-$toptext = '<img src="\opdrachten\CG\PHP\img\HOME.png" alt="topper" style="height:100px;">';
+$toptext = '<img src="\opdrachten\CG\PHP\pages\img\HOME.png" alt="topper" style="height:100px;">';
 $titletext = "Home!";
 include(__DIR__ . '/../_header.php');
 ?>
@@ -14,6 +14,8 @@ include(__DIR__ . '/../_header.php');
 Moet je dit lezen.
 <?php
 
+var_dump ($pathInfo);
+$_GET["/"] = "/";
 $variabele = "Lennart";
 echo "<div style='color: red;'> $variabele </div>";
 ?>

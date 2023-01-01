@@ -11,7 +11,7 @@ if (isset($_POST['name'])) {
     if ($_POST['name'] >= 2) {
         $_SESSION['message'] = '(Thanks for telling us your name!)';
     }
-    header('Location: random.php');
+    header('Location: random');
     exit;
 }
 

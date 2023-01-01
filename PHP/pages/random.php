@@ -97,7 +97,7 @@ if (isset($_SESSION['name'])) {
   <br><br><br><br><br>
 
   <p>
-  <form method="post" action="pictures.php">
+  <form method="post" action="pictures">
     <input type="hidden" name="number" value="<?php echo $randomInt; ?>">
     <input type="hidden" name="tafelpoten" value="<?php echo $pootjes; ?>">
     <button type="submit" style="margin:69px;font-size:20px;width:269px;height:40px;">

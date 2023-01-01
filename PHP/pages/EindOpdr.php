@@ -5,7 +5,7 @@
     <title>Oefen Eindopdracht</title>
 
     <!-- STYLES ARE INCLUDED HERE -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href='/../../opdrachten/CG/PHP/pages/styles/main.css'>
 
 </head>
 
@@ -43,7 +43,7 @@
             <p class="text paragraph">
                 <?php
                 // YOUR APP IS RUN FROM A MAIN FILE.
-                require 'controllers/app.php';
+                require __DIR__ . '/controllers/app.php';
                 ?>
             </p>
         </div>

@@ -1,6 +1,6 @@
 <?php
 // ALL THE CLASSES WITH THEIR BEHAVIOR GO IN HERE.
-require 'models/Ritjes.php';
+require __DIR__ . '/../models/Ritjes.php';
 
 // Object voor alle ritjes aanmaken aanmaken:
 $Boekhouden = new Ritjes();

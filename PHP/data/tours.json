@@ -1,0 +1,17 @@
+[
+    {
+        "destination": "Fuck yea",
+        "number_of_tickets_available": 2,
+        "is_accessible": true
+    },
+    {
+        "destination": "nicenice",
+        "number_of_tickets_available": 99,
+        "is_accessible": false
+    },
+    {
+        "destination": "Huh?",
+        "number_of_tickets_available": 16,
+        "is_accessible": true
+    }
+]
