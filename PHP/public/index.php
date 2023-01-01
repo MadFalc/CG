@@ -12,6 +12,7 @@ $urlMap = [
     '/secret' => 'secret.php',
     '/list-tours' => 'list-tours.php',
     '/create-tour' => 'create-tour.php',
+    '/edit-tour' => 'edit-tour.php',
     '/' => 'homepage.php'
 ];
 
