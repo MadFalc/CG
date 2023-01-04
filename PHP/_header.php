@@ -10,7 +10,7 @@ $toptext = $toptext ?? 'Lege toptext!';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="\opdrachten\CG\PHP\bootstrap.min.css"> -->
+    <link rel="stylesheet" href="\opdrachten\CG\PHP\bootstrap(aangepast).min.css">
     <link rel="stylesheet" href="\opdrachten\CG\PHP\style.css">
     <link rel="shortcut icon" href="\opdrachten\CG\PHP\pages\img\heart icon.gif" type="image/gif">
     <!--Kijk Tomi, als je hem opent in Firefox, dan pulseert het hartje!-->
@@ -42,7 +42,7 @@ $toptext = $toptext ?? 'Lege toptext!';
         }
         ?>
     </ul>
-    <div class="top" id=top style="margin-top:30px;">
+    <div class="top" id=top>
         <?php echo $toptext; ?>
     </div>
 

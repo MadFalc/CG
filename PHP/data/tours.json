@@ -52,5 +52,11 @@
         "number_of_tickets_available": 173,
         "is_accessible": true,
         "id": 9
+    },
+    {
+        "destination": "Geluidjes",
+        "number_of_tickets_available": 3,
+        "is_accessible": false,
+        "id": 10
     }
 ]
