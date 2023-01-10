@@ -58,5 +58,11 @@
         "number_of_tickets_available": 3,
         "is_accessible": false,
         "id": 10
+    },
+    {
+        "destination": "Leuk joh, een tour toevoegen",
+        "number_of_tickets_available": 27,
+        "is_accessible": true,
+        "id": 11
     }
 ]
